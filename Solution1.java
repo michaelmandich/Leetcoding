@@ -15,3 +15,5 @@ class Solution {
         return sol;         
     }
 }
+\\ goes through an integer array and looks for 2 numbers, if found, returns those two numbers' 
+    location within the array
