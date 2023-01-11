@@ -6,14 +6,14 @@ class Solution {
         while (l1 != null || l2 != null || carry != 0) {
             int x = (l1 != null) ? l1.val : 0;
             int y = (l2 != null) ? l2.val : 0;
-            int sum = carry + x + y;
+            int sum = carry + x + y; \\ will never be greater than 2, so line 11 results in 1 or 0 every time
             carry = sum / 10;
             curr.next = new ListNode(sum % 10);
             curr = curr.next;
             if (l1 != null)
                 l1 = l1.next;
             if (l2 != null)
-                l2 = l2.next;
+                l2 = l2.next; \\ standard solution for problem of this type
         }
         return finalhead.next;
     }
